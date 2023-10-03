@@ -1,2 +1,2 @@
 # React-Series
-Namaste React
+## Namaste React
