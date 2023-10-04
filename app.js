@@ -1,3 +1,6 @@
+import React from "react"
+import ReactDOM from "react-dom";
+
 const createElements = React.createElement(
   "div",        //child inside root id in html
   { id: "child" },
