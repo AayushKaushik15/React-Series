@@ -2,6 +2,16 @@
 ## Namaste React
 
 
+## ignite react app using vite
+- step 1 = npm create vite@latest {this command automatically add all react dependencies and modules automatically with additional files}
+
+## make custom react app 
+
+- step 1 = npm init {package.json}
+- step 2 = npm install -D parcel {module, package-lock.json}
+
+
+
 # parcel
 - dev Build
 - Local server
