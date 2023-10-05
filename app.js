@@ -1,14 +1,40 @@
-import React from "react"
-import ReactDOM from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom/client"; //because we are
+//dealing with DOM we need ReactDom as a separate package
 
-const createElements = React.createElement(
-  "div",        //child inside root id in html
-  { id: "child" },
-  [React.createElement("h1", {}, "I m h1 tag")], // siblings
-  [React.createElement("h1", {}, "I m h1 tag")]
+// React element
+
+// React.createElement => Object => HTMLElement(render)
+
+const newElement = React.createElement("h1", { id: "heading" }, "React.js 🚀");
+
+//JSX
+
+const headingJSX = <h1>React using JSX</h1>;
+
+// const root = ReactDOM.createRoot(document.querySelector("body"));
+
+
+const number = 100;
+
+
+const title = (             //react element
+    <h3 className="head">component
+        <HeadingComponent/>
+    </h3>
+    
 );
 
 
-const root = ReactDOM.createRoot(document.querySelector("#root"))
+const HeadingComponent = () => (    //react function, component
+    <div id="container">
 
-root.render(createElements)
+         <h2>{title}</h2>
+
+        <h1 className="heading">Namaste React functional component</h1>
+    </div>
+);
+
+const root = ReactDOM.createRoot(document.querySelector('body'))
+
+root.render(<HeadingComponent/>);
